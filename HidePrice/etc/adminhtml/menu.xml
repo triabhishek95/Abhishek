@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Magento_Backend::abhishek" title="ABHISHEK" module="Magento_Backend" sortOrder="25" resource="Magento_Backend::abhishek"/>
+
+        <add id="Abhishek_HidePrice::abhishek_hidePrice" title="Hide Price" module="Abhishek_HidePrice" sortOrder="10" parent="Magento_Backend::abhishek" resource="Abhishek_HidePrice::abhishek_hidePrice"/>
+        <add id="Abhishek_HidePrice::configuration" title="Configuration" module="Abhishek_HidePrice" sortOrder="10" parent="Abhishek_HidePrice::abhishek_hidePrice" action="adminhtml/system_config/edit/section/hideprice" resource="Abhishek_HidePrice::configuration"/>
+
+        <add id="Abhishek_HidePrice::hidePrice" title="   " module="Abhishek_HidePrice" sortOrder="20" parent="Magento_Backend::abhishek" resource="Abhishek_HidePrice::hidePrice"/>
+    </menu>
+</config>
