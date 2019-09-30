@@ -17,7 +17,7 @@ class AddHandles implements ObserverInterface{
 		$layout = $observer->getEvent()->getLayout();
 
 		if(!$this->customerSession->isLoggedIn()){
-			//$layout->getUpdate()->addHandle('catalog_product_view');
+			$layout->getUpdate()->addHandle('customer_logged_out');
 		}
 	}
 }
